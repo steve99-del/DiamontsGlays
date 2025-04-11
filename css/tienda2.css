@@ -1,0 +1,267 @@
+
+
+#logo2{
+    width: 90px;
+    border-radius: 10px;
+}
+header{
+    width: 1600px;
+    height: 800;
+    margin: 50px auto;
+    border: 5px solid rgb(128, 99, 99);
+    overflow: hidden; /*oculta  el ancho segun el ancho asignado */
+    box-shadow: 0 4px 20px  rgb(68, 44, 44);   /*sombras*/
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.animacion{
+    display: flex;
+    width: 300%;
+    animation-name:anima ;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+.anima{
+    width: 1000px;
+}
+
+
+.anima img{
+    height: 800px;
+    width: 980px;
+    display: block;
+}
+
+
+
+@keyframes anima{
+    0%{transform: translate(0);}
+    100%{transform: translateX(-23%);}
+}
+
+
+
+
+body{
+    background-color: bisque;
+}
+
+li{
+     
+    padding-inline: 20px;
+    display: block;
+    float: left;
+ }
+
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(15, 14, 12);
+    text-align: center;
+}
+
+
+img{
+    border-radius: 10px;
+    margin-left: 25px;
+    
+}
+
+
+
+
+.orden{
+    
+
+    margin: 50px;
+    display: block;
+    float: left;
+}
+
+#vestido1{
+    width: 400px;
+    height: 530;
+}
+
+#vestido2{
+    width: 400px;
+}
+
+#vestido3{
+    width: 400px;
+}
+
+.orden2{
+    margin: 50px;
+    display: block;
+    float:left ;
+}
+
+#jeans1{
+    width: 400px;
+
+}
+
+#jeans2{
+    width: 400px;
+
+}
+
+#jeans3{
+    width: 400px;
+    height: 400;
+
+}
+
+
+.orden3{
+    margin: 100px;
+    display: block;
+    float:left ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    width: 1520px;
+    height: 20px;
+    background-color: rgb(206, 186, 131);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-right: 35px;
+    padding: 50px;
+}
+
+
+nav a:hover{
+    background-color: rgb(92, 72, 72);
+
+}
+nav ul{
+    
+    
+        display: grid;
+        grid-template-columns: repeat(5,300px);
+        grid-template-rows: auto;
+        
+    
+}
+
+
+ul a{
+    margin: 60px;
+    font-size: large;
+}
+
+.vestidos{
+    width: 30px;
+}
+
+.figuras2{
+    display: grid;
+    grid-template-columns: repeat(3,200fr);
+    gap: 10px;
+
+}
+
+
+video{
+    width: 1500px;
+    margin: 100px;
+    border-radius: 20px 20px;
+    padding-top: 50px;
+}
+
+
+
+footer{
+    width: 1500;
+    height: 120px;
+    background-color: rgba(20, 10, 17, 0.466);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 750px;
+    padding: 60px;
+    text-align: justify;
+
+}
+
+footer a{
+   margin-left: 40px;
+   
+   
+}
+
+@media(max-width:868px){
+    
+   
+    nav{
+        width: 1000px;
+        height: 80px;
+        background-color: rgb(206, 186, 131);
+        margin: 20px;
+        text-align: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding-right: 35px;
+        padding: 50px;
+    }
+    nav ul  {
+
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1,400px);
+        grid-template-rows: auto;
+
+    }
+    header{
+        width: 800px;
+        height: 800;
+        margin: 50px auto;
+        border: 5px solid rgb(128, 99, 99);
+        overflow: hidden; /*oculta  el ancho segun el ancho asignado */
+        box-shadow: 0 4px 20px  rgb(68, 44, 44);   /*sombras*/
+    }
+    .figuras2{
+        display: grid;
+        grid-template-columns: repeat(1,200fr);
+        gap: 10px;
+    }
+    video{
+        width: 800px;
+        margin: 100px;
+        border-radius: 20px 20px;
+        padding-top: 50px;
+    }
+    footer{
+        width: 800;
+        height: 120px;
+        background-color: rgba(20, 10, 17, 0.466);
+        border-radius: 30px;
+        margin: auto;
+        margin-top: 750px;
+        padding: 60px;
+        text-align: justify;
+    
+    }
+
+}    
